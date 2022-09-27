@@ -1,0 +1,84 @@
+﻿<Window x:Class="Railway_ticketing_system_WPF_.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Railway_ticketing_system_WPF_"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="987" Width="1366">
+    <Grid>
+        <Grid Background="#FF4A2E98">
+            <TextBlock
+            Width="762"
+            Height="163"
+            Margin="0,10,0,0"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            FontSize="55"
+            TextWrapping="Wrap" Foreground="#FFB4B4B4"><Run Text="Добро пожаловать в " /><Run Text="систему. Пожалуйста, авторизуйтесь" /><Run Text=":" /></TextBlock>
+
+            <TextBlock
+            Width="161"
+            Height="74"
+            Margin="202,270,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            FontSize="48"
+            Text="Логин:"
+            TextWrapping="Wrap" Foreground="#FFB4B4B4" />
+
+            <TextBox
+            x:Name="AuthorizationLoginBox"
+            Width="972"
+            Height="90"
+            Margin="368,262,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            FontSize="55"
+            TextWrapping="Wrap" Text="&#xD;&#xA;" Background="#FF5F3CC0" Foreground="#FFB4B4B4" />
+
+            <TextBlock
+            Width="186"
+            Height="74"
+            Margin="177,427,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            FontSize="48"
+            Text="Пароль:"
+            TextWrapping="Wrap" Foreground="#FFB4B4B4" />
+
+            <PasswordBox
+            x:Name="AuthorizationPwdBox"
+            Width="972"
+            Height="88"
+            Margin="368,420,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            FontSize="55"
+            InputScope="Password" Background="#FF5F3CC0" Foreground="#FFB4B4B4" Password="" />
+
+            <Button
+            x:Name="AuthorizationGO"
+            Width="424"
+            Height="127"
+            Margin="0,583,0,0"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            Click="AuthorizationGO_Click"
+            Content="Вход"
+            FontSize="72" Foreground="#FFB4B4B4" Background="#FF5F3CC0" />
+
+            <TextBlock
+            x:Name="RegistrationHyperlink"
+            Margin="0,852,0,0"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            Text="Вы здесь впервые?"
+            FontSize="36" MouseDown="RegistrationHyperlink_MouseDown" Foreground="#FFA584FF" TextDecorations="Underline" />
+            <!--Click="RegistrationHyperlink_Click"-->
+
+
+        </Grid>
+
+    </Grid>
+</Window>
