@@ -1,0 +1,17 @@
+﻿<Window
+    x:Class="Railway_ticketing_system_WPF_.UserAccount"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:Railway_ticketing_system_WPF_"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="UserAccount"
+    Width="800"
+    Height="450"
+    WindowState="Maximized"
+    mc:Ignorable="d">
+    <Grid Background="#FF4A2E98" >
+        <DataGrid Background="#FF4A2E98" d:ItemsSource="{d:SampleData ItemCount=5}"/>
+        <Button Content="На главную" HorizontalAlignment="Center" Margin="0,404,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+    </Grid>
+</Window>
